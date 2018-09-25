@@ -1,0 +1,17 @@
+
+
+#trapezoid {
+	border-top: 100px solid blue;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+
+#trapezoid2 {
+	border-bottom: 100px solid blue;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
