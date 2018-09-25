@@ -2,7 +2,7 @@
 
 
 #trapezoid {
-	border-top: 200px solid blue;
+	border-top: 200px solid skyblue;
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
 	height: -0;
@@ -11,10 +11,11 @@
   bottom: 380px;
   position: fixed;
   transform: skewY(10deg);
+	border-radius:15px;
 }
 
 #trapezoid2 {
-	border-bottom: 200px solid blue;
+	border-bottom: 200px solid skyblue;
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
 	height: 550px;
@@ -22,6 +23,7 @@
   left: 750px;
   position: fixed;
   transform: skewY(10deg);
+	border-radius:15px;
 }
 
 
