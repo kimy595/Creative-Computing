@@ -1,9 +1,90 @@
-body{
-margin: auto;
-padding: 0;
-text-align: center;
-text-rendering: auto;
-border: 0;
-font: helvetica;
-background-color: #000;
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+*{
+  padding: 0;
+  margin: 0;
 }
+
+body,html{
+  background-color: #f4f4f4;
+}
+
+.container{
+  width:60%;
+  height: 11in;
+  margin-left: 20%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: auto;
+  font-family: "Passion One", sans-serif;
+  text-align: center;
+
+  /* background: url(background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  color: transparent; */
+
+}
+h3{
+  font-size: 50px;
+}
+h1{
+  font-size: 260px;
+}
+h2{
+  font-size: 40px;
+}
+h4{
+  font-size: 30px;
+}
+
+@media screen and (max-width:700px) {
+  h3{
+    font-size: 50px;
+  }
+  h1{
+    font-size: 260px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h4{
+    font-size: 10px;
+  }
+}
+.cliped1{
+background: url(background3.jpg) no-repeat center center;
+background-size: 500px;
+color: #fff;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip:text;}
+
+.cliped2{
+background: url(background2.jpg) no-repeat center center;
+background-size: 500px;
+color: #fff;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip:text;}
+
+.cliped3{
+background: url(hor.jpg) no-repeat center center;
+background-size: 288px;
+color: #fff;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip:text;}
+
+
+.cliped4{
+background: url(hor.jpg) no-repeat center center;
+background-size: 244px;
+color: #fff;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip:text;}
+
+.cliped5{
+background: url(hor.jpg) no-repeat center center;
+background-size: 244px;
+color: #fff;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip:text;}
