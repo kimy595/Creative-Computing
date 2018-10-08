@@ -6,7 +6,7 @@
 }
 
 body,html{
-  background-color: #f4f4f4;
+  background-color: #000;
 }
 
 .container{
@@ -54,15 +54,16 @@ h4{
   }
 }
 .cliped1{
-background: url(background3.jpg) no-repeat center center;
+background: url(red.jpg) no-repeat center center;
 background-size: 500px;
+background-position-y:46px;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
 
 .cliped2{
 background: url(background2.jpg) no-repeat center center;
-background-size: 500px;
+background-size: 640px;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
