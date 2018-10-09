@@ -11,7 +11,7 @@ body,html{
 
 .container{
   width:60%;
-  height: 11in;
+  height: 10in;
   margin-left: 20%;
   background-color: black;
   display: grid;
@@ -33,7 +33,7 @@ h1{
   font-size: 260px;
 }
 h2{
-  font-size: 40px;
+  font-size: 62px;
 }
 h4{
   font-size: 30px;
@@ -47,7 +47,7 @@ h4{
     font-size: 260px;
   }
   h2{
-    font-size: 40px;
+    font-size: 62px;
   }
   h4{
     font-size: 10px;
@@ -70,7 +70,7 @@ color: #fff;
 
 .cliped3{
 background: url(hor.jpg) no-repeat center center;
-background-size: 288px;
+background-size: 313px;
 color: #fff;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip:text;}
