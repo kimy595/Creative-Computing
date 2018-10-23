@@ -29,9 +29,7 @@ body,html{
   text-align: center;
   border: 2px solid pink;
   cursor: pointer;
-  -webkit-transition:0.5s;
-}
-
+  -webkit-transition:0.5s;}
 .container:hover {
   border: 2px solid rgba(0,160,80,0);
   color: #pink;
