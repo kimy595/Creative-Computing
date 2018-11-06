@@ -47,8 +47,8 @@ section, footer, header, aside{
 
 
 #clock{
-	width:370px;
-	padding:40px;
+	width:480px;
+	padding:85px;
 	margin:100px auto 60px;
 	position:relative;
 }
@@ -68,10 +68,10 @@ section, footer, header, aside{
 
 #clock .display{
 	text-align:center;
-	padding: 40px 20px 20px;
+	padding: 98px 20px 20px;
 	border-radius:6px;
 	position:relative;
-	height: 54px;
+	height: 150px;
 }
 
 
@@ -351,7 +351,7 @@ section, footer, header, aside{
 
 
 #clock .weekdays{
-	font-size:12px;
+	font-size:24px;
 	position:absolute;
 	width:100%;
 	top:10px;
@@ -377,9 +377,9 @@ section, footer, header, aside{
 
 #clock .ampm{
 	position:absolute;
-	bottom:20px;
-	right:20px;
-	font-size:12px;
+	bottom:28px;
+	right:35px;
+	font-size:15px;
 }
 
 
