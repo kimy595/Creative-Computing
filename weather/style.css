@@ -1,0 +1,23 @@
+body {
+
+  background-color: #FFD2C0;
+  text-align: center;
+}
+
+    #weather{
+      font-size: 30px;
+      color: white;
+      font-family; Lato, arial;
+    }
+
+    #tempCircle{
+      background-color: pink;
+      border-radius: 1000px;
+      transform: translate(500px, 500px);
+    }
+
+    #weather{
+      font-size: 30px;
+      color: white;
+      font-family; Lato, arial;
+    }
