@@ -10,8 +10,6 @@
 
     <div class="sun"></div>
 
-
-
 <div class="cloud">
 <img class="cloud1" src="cloud.png">
 <img class="cloud2" src="cloud.png">
@@ -22,6 +20,13 @@
   <div class="basket"></div>
 </div>
 
+<div class="balloons">
+<img class="balloon1" src="balloon1.png">
+  <img class="balloon2" src="balloon2.png">
+    <img class="balloon3" src="balloon3.png">
+      <img class="balloon4" src="balloon4.png">
+        <img class="balloon5" src="balloon5.png">
+</div
 <button class = 'up' type="button" name="up">click me up</button>
 <button class = 'down' type="button" name="up">click me down</button>
 
@@ -42,6 +47,13 @@
     console.log(y);
     y=y2;
   });
+
+  if(y=cloud1){
+    $('.hot-air-balloon').css({"transform":"translate(0px,"+y2+"px)"});
+  } else {
+    $('.hot-air-balloon').css({"background-color": "blue"});
+  }
+
 
  </script>
   </body>
