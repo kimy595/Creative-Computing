@@ -29,7 +29,7 @@ transform: translate(900px, 900px);
           animation: balloon infinite 3s 0.5s;
 } */
 
-.balloon1{
+/* .balloon1{
 width: 10%;
   transform: translate(10px,300px);
   -webkit-animation: balloons infinite 3s 0.5s;
@@ -63,7 +63,7 @@ transform: translate(10px,300px);
 -webkit-animation: balloons infinite 3s 0.5s;
         animation: balloons infinite 3s 0.5s;
 }
-
+ */
 
 
 .cloud{
@@ -109,9 +109,9 @@ transform: translate(10px,300px);
 }
 .cloud4 {
   position: absolute;
-  width:30%;
+  width:10%;
   bottom: 20%;
-  top: 50%;
+  top: 80%;
   left: 100%;
   -webkit-animation: moveClouds 15s linear infinite;
           animation: moveClouds 15s linear infinite;
