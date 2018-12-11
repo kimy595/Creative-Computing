@@ -53,6 +53,7 @@ width: 10%;
 }
 
 .balloon4{
+width: 18%;
 -webkit-animation: balloon4 infinite 3s 0.5s;
         animation: balloon4 infinite 3s 0.5s;
 }
