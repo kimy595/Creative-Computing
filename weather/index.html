@@ -22,26 +22,45 @@
 
     </style>
     </head>
-  <body style="background-color:green;">
+  <body style="background-color: #e1f6f4;">
     <div id="weather">Weather</div>
     <div id="tempText"></div>
     <div id="sppedText"></div>
     <div id="tempCircle"></div>
+    <div class="formy">
+         <form id="target">
+           <input class="formy" id="city" type="text" placeholder="Your City" value="">
+         </form>
+     </div>
+
+
+
 <script type="text/javascript">
   $("document").ready(function(){
     $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
+      url: "http://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
       // url: "http://api.openweathermap.org/data/2.5/weather?q=London&units=imperial&appid=ef3e268cbe387a39c451c064de7ff0c1",
 
       success: function(data) {
         handleData(data)
       }
     });
+    var city = "New York"
+       getData(city)
+
+       $( "#target" ).submit(function( event ) {
+           city = $("#city").val()
+           getData(city)
+           $( "#target" ).val("In" + city)
+           event.preventDefault();
+       });
 
     function handleData(data){
       console.log(data);
       console.log(data.name);
       console.log(data.main.temp);
+      console.log(data.sys.country);
+  console.log(data.weather);
 
       if(data.main.temp > 35){
         $("#tempCircle").css({"background-color": "red"});
@@ -54,6 +73,10 @@
       $("#speedText").html(data.wind.speed)
       $("#tempCircle").css("width", data.main.temp)
       $("#tempCircle").css("height", data.main.temp)
+      $("#coordsText").html(data.name + "  //  " +data.sys.country)
+     $("#tempText").html(data.main.temp)
+     $("#speedText").html(data.wind.speed)
+     $("#humText").html(data.main.humidity)
       // $("#tempCircle").css({"background-color": "rgba(164,238,"+ (data.main.temp) +",1)"});
     }
 })
