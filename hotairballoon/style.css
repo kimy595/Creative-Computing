@@ -5,7 +5,7 @@ body {
 }
 
 .up{
-    transform: translate(-600px, 900px);
+    transform: translate(-650px, 900px);
     /* top: 10%;
     left: 50%; */
     position: fixed;
@@ -22,12 +22,12 @@ width: 7%;
 }
 
 .sun {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 60%;
   background: #ffff99;
   position: absolute;
-  left: 50%;
+  left: 46%;
   margin-left: -110px;
   margin-top: 20px;
   margin-bottom: 80px;
@@ -35,7 +35,7 @@ width: 7%;
 
 
 .balloon1{
-width: 14%;
+width: 17%;
   -webkit-animation: balloon1 infinite 3s 1s;
           animation: balloon1 infinite 3s 1s;
 }
@@ -231,22 +231,22 @@ width: 12%;
 
   @-webkit-keyframes balloon1 {
     0%, 100% {
-      -webkit-transform: translateY(-30px) translateX(40px);
-              transform: translateY(-30px) translateX(40px);
+      -webkit-transform: translateY(-16px) translateX(40px);
+              transform: translateY(-16px) translateX(40px);
     }
     50% {
-      -webkit-transform: translateY(-50px) translateX(40px);
-              transform: translateY(-50px)translateX(40px);
+      -webkit-transform: translateY(-30px) translateX(40px);
+              transform: translateY(-30px)translateX(40px);
     }
   }
   @keyframes balloon1 {
     0%, 100% {
-      -webkit-transform: translateY(-30px) translateX(40px);
-              transform: translateY(-30px) translateX(40px);
+      -webkit-transform: translateY(-16px) translateX(40px);
+              transform: translateY(-16px) translateX(40px);
     }
     50% {
-      -webkit-transform: translateY(-50px) translateX(40px);
-              transform: translateY(-50px) translateX(40px);
+      -webkit-transform: translateY(-30px) translateX(40px);
+              transform: translateY(-30px) translateX(40px);
     }
   }
 
