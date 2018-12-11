@@ -1,26 +1,15 @@
-/* $sky: #e1f6f4;
-$sun: #fbc971;
-$cloud: #ffffff;
-$basket: #d1c1a5;
-$balloonRope: #b33e64;
-$balloonColor1: #d7608d;
-$balloonColor2: #ffffff; */
-
 body {
   background: #e1f6f4;
   height: 100vh;
   overflow: hidden;
 }
-.up{
-border-radius: 100px;
-  transform: translate(600px,610px);
 
+.up{
+    transform: translate(500px, 900px);
 }
 
 .down{
-  border-radius: 100px;
-  transform: translate(900px,610px);
-
+transform: translate(900px, 900px);
 }
 
 .sun {
@@ -35,82 +24,57 @@ border-radius: 100px;
   margin-bottom: 80px;
 }
 
-.balloons{
+/* .balloons{
   -webkit-animation: balloon infinite 3s 0.5s;
           animation: balloon infinite 3s 0.5s;
-}
+} */
+
 .balloon1{
 width: 10%;
   transform: translate(10px,300px);
+  -webkit-animation: balloons infinite 3s 0.5s;
+          animation: balloons infinite 3s 0.5s;
 }
 
 .balloon2{
   width: 10%;
 transform: translate(90px,40px);
+-webkit-animation: balloons infinite 3s 0.5s;
+        animation: balloons infinite 3s 0.5s;
 }
 
 .balloon3{
 width: 10%;
 transform: translate(1100px,300px);
+-webkit-animation: balloons infinite 3s 0.5s;
+        animation: balloons infinite 3s 0.5s;
 }
 
 .balloon4{
 width: 10%;
 transform: translate(500px,90px);
+-webkit-animation: balloons infinite 3s 0.5s;
+        animation: balloons infinite 3s 0.5s;
 }
 
 .balloon5{
 width: 10%;
 transform: translate(10px,300px);
+-webkit-animation: balloons infinite 3s 0.5s;
+        animation: balloons infinite 3s 0.5s;
 }
 
 
-/* .cloud {
-  background: #ffffff;
-  width: 200px;
-  height: 70px;
-  border-radius: 70px;
-  position: absolute;
-  left: 50%;
-  margin-left: -170px;
-  margin-top: 200px;
-  box-shadow: 0 6px 10px rgba(251, 113, 163, 0.6);
-  -webkit-animation: cloud infinite 3s;
-          animation: cloud infinite 3s;
-} */
 
-/* .cloud:before {
-  content: "";
-  height: 80px;
-  width: 80px;
-  background: #ffffff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 50%;
+.cloud{
+  animation: cloud infinite 3s 0.5s;
 }
-.cloud:after {
-  content: "";
-  height: 120px;
-  width: 120px;
-  background: #ffffff;
-  position: absolute;
-  bottom: 10px;
-  right: 15%;
-  border-radius: 50%;
-} */
-/*
-img{
-  width:30%;
-} */
 
 .cloud1{
   width:14%;
   position: absolute;
   left: 100%;
   top: 73%;
-  margin-left: -170px;
-  margin-top: 200px;
 
   -webkit-animation: cloud infinite 3s;
           animation: cloud infinite 3s;
@@ -143,9 +107,16 @@ img{
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
-
-.cloud{
-  animation: cloud infinite 3s 0.5s;
+.cloud4 {
+  position: absolute;
+  width:30%;
+  bottom: 20%;
+  top: 50%;
+  left: 100%;
+  -webkit-animation: moveClouds 15s linear infinite;
+          animation: moveClouds 15s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .balloon{
@@ -214,37 +185,6 @@ img{
               transform: translateX(-110vw);
     }
   }
-  @-webkit-keyframes drift {
-    0% {
-      -webkit-transform: translateY(0px) rotate();
-              transform: translateY(0px) rotate();
-    }
-    50% {
-      -webkit-transform: translateY(-20px) rotate(-3deg);
-              transform: translateY(-20px) rotate(-3deg);
-    }
-    100% {
-      -webkit-transform: translateY(0px) rotate();
-              transform: translateY(0px) rotate();
-    }
-  }
-  @keyframes drift {
-    0% {
-      -webkit-transform: translateY(0px) rotate();
-              transform: translateY(0px) rotate();
-    }
-    50% {
-      -webkit-transform: translateY(-20px) rotate(-3deg);
-              transform: translateY(-20px) rotate(-3deg);
-    }
-    100% {
-      -webkit-transform: translateY(0px) rotate();
-              transform: translateY(0px) rotate();
-    }
-  }
-
-
-
 
 
   @-webkit-keyframes cloud {
@@ -279,6 +219,27 @@ img{
     }
   }
   @keyframes balloon {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+
+  @-webkit-keyframes balloons {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @keyframes balloons {
     0%, 100% {
       -webkit-transform: translateY(0);
               transform: translateY(0);

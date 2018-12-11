@@ -14,22 +14,24 @@
 <img class="cloud1" src="cloud.png">
 <img class="cloud2" src="cloud.png">
 <img class="cloud3" src="cloud.png">
+<img class="cloud4" src="cloud.png">
  </div>
+
 <div class="hot-air-balloon">
   <img class="balloon" src="balloon.png">
   <div class="basket"></div>
 </div>
 
-<div class="balloons">
+<!-- <div class="balloons">
 <img class="balloon1" src="balloon1.png">
   <img class="balloon2" src="balloon2.png">
     <img class="balloon3" src="balloon3.png">
       <img class="balloon4" src="balloon4.png">
         <img class="balloon5" src="balloon5.png">
-</div
+</div> -->
+
 <button class = 'up' type="button" name="up">click me up</button>
 <button class = 'down' type="button" name="up">click me down</button>
-
 
 <script>
   let y=0;
@@ -48,14 +50,8 @@
     y=y2;
   });
 
-  if(y=cloud1){
-    $('.hot-air-balloon').css({"transform":"translate(0px,"+y2+"px)"});
-  } else {
-    $('.hot-air-balloon').css({"background-color": "blue"});
-  }
-
-
  </script>
+
   </body>
 
 </html>

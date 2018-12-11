@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dompoem</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style= "text-align: center";>
+    <div id="random"></div>
+    <br>
+    <button id="button" type="button" name="button">Click for Poem</button>
+    <br>
+    <br>
+    <br>
+    <!-- <div>  What are heavy? </div><br/>
+      <div>Sea-sand and sorrow </div><br/>
+    <div>  What are brief? </div><br/>
+      <div>Today and tomorrow </div><br/>
+    <div>  What are frail? </div><br/>
+      <div>Spring blossoms and youth </div><br/>
+    <div>  What are deep? </div><br/>
+      <div>The ocean and truth </div><br/> -->
+
+      <script>
+          // $("#random").html("more tests!");
+
+           var words = ["What are heavy?", ".", ".", "Sea-samd and sorrow",".",".", "What are brief?",".",".",
+            "Today and tomorrow",".",".", "What are frail?",".",".", "Spring blossoms and youth",".",".",
+            "What are deep?",".",".","The ocean and truth"]
+           var i = 0;
+
+           $("document").ready(function(){
+             $("#button").click(function() {
+               $("body").append("<div class='box'>" + words[i] + "</div>");
+               i++;
+               // $("#random").html("wow");
+             })
+           })
+           </script>
+  </body>
+</html>
+
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="random"></div>
+    <button id="button" type="button" name="button">Don't Click</button>
+
+    <script>
+    // $("#random").html("more tests!");
+
+     var words = ["hello,", "...", "are", "you", "bored","of","clicking","yet","????", "??????", "...", "......",".........","Satisfied?"]
+     var i = 0;
+
+     $("document").ready(function(){
+       $("#button").click(function() {
+         $("body").append("<div class='box'>" + words[i] + "</div>");
+         i++;
+         // $("#random").html("wow");
+       })
+     })
+     </script>
+
+
+  </body>
+
+</html> -->
