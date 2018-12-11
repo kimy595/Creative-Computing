@@ -5,11 +5,18 @@ body {
 }
 
 .up{
-    transform: translate(500px, 900px);
+    transform: translate(-200px, 900px);
+    /* top: 10%;
+    left: 50%; */
+    position: fixed;
+
 }
 
 .down{
-transform: translate(900px, 900px);
+transform: translate(100px, 900px);
+/* top: 200%;
+left: 50%; */
+position: fixed;
 }
 
 .sun {
@@ -24,46 +31,42 @@ transform: translate(900px, 900px);
   margin-bottom: 80px;
 }
 
-/* .balloons{
-  -webkit-animation: balloon infinite 3s 0.5s;
-          animation: balloon infinite 3s 0.5s;
-} */
 
-/* .balloon1{
+.balloon1{
 width: 10%;
-  transform: translate(10px,300px);
-  -webkit-animation: balloons infinite 3s 0.5s;
-          animation: balloons infinite 3s 0.5s;
+  /* transform: translate(10px,300px); */
+  -webkit-animation: balloons1 infinite 3s 1s;
+          animation: balloons1 infinite 3s 1s;
 }
 
 .balloon2{
   width: 10%;
-transform: translate(90px,40px);
--webkit-animation: balloons infinite 3s 0.5s;
-        animation: balloons infinite 3s 0.5s;
+/* transform: translate(90px,40px); */
+-webkit-animation: balloons2 infinite 3s 0.5s;
+        animation: balloons2 infinite 3s 0.5s;
 }
 
 .balloon3{
 width: 10%;
 transform: translate(1100px,300px);
--webkit-animation: balloons infinite 3s 0.5s;
-        animation: balloons infinite 3s 0.5s;
+-webkit-animation: balloons3 infinite 3s 1s;
+        animation: balloons3 infinite 3s 1s;
 }
 
 .balloon4{
 width: 10%;
 transform: translate(500px,90px);
--webkit-animation: balloons infinite 3s 0.5s;
-        animation: balloons infinite 3s 0.5s;
+-webkit-animation: balloons4 infinite 3s 0.5s;
+        animation: balloons4 infinite 3s 0.5s;
 }
 
 .balloon5{
 width: 10%;
 transform: translate(10px,300px);
--webkit-animation: balloons infinite 3s 0.5s;
-        animation: balloons infinite 3s 0.5s;
+-webkit-animation: balloons5 infinite 3s 1s;
+        animation: balloons5 infinite 3s 1s;
 }
- */
+
 
 
 .cloud{
@@ -132,8 +135,8 @@ transform: translate(10px,300px);
 
   /* transform: translate(0px, -600px); */
 
-  -webkit-animation: balloon infinite 3s 0.5s;
-          animation: balloon infinite 3s 0.5s;
+  /* -webkit-animation: balloon infinite 3s 0.5s;
+          animation: balloon infinite 3s 0.5s; */
 }
     /* .hot-air-balloon:before {
       content: "";
@@ -229,7 +232,17 @@ transform: translate(10px,300px);
     }
   }
 
-  @-webkit-keyframes balloons {
+  @-webkit-keyframes balloon1 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+  @keyframes balloons1 {
     0%, 100% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
@@ -239,7 +252,79 @@ transform: translate(10px,300px);
               transform: translateY(-10px);
     }
   }
-  @keyframes balloons {
+  @-webkit-keyframes balloon2 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @keyframes balloons2 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @-webkit-keyframes balloon3 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @keyframes balloons3 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+
+  @-webkit-keyframes balloon4 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+
+  @keyframes balloons4 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @-webkit-keyframes balloon5 {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+    }
+  }
+  @keyframes balloons5 {
     0%, 100% {
       -webkit-transform: translateY(0);
               transform: translateY(0);
